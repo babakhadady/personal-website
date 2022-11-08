@@ -1,6 +1,6 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
-import "./App.css";
+import "./babakhadady.github.io/App.css";
 import particlesConfig from "./components/config/particlesConfig";
 import React, { useState } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
