@@ -1,6 +1,6 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
-import "./babakhadady.github.io/App.css";
+import "/App.css";
 import particlesConfig from "./components/config/particlesConfig";
 import React, { useState } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -16,6 +16,7 @@ export default function App() {
     <div>
       <body>
         <div1>
+    "Hello"
           <nav>
             <ul class="details">
               <li><a>CONTACT</a></li>
