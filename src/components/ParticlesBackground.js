@@ -7,7 +7,6 @@ const ParticlesBackground = () => {
         <Particles options={particlesConfig}>
         </Particles>
     )
-
 }
 
 export default ParticlesBackground
