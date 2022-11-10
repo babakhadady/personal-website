@@ -1,6 +1,6 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
-import "./App.css";
+import "/App.css";
 import particlesConfig from "./components/config/particlesConfig";
 import React, { useState, useRef, useEffect } from "react";
 import { Fade } from "react-reveal";
