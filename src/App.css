@@ -1,12 +1,22 @@
+
+.wrapper {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+
 nav {
   position: fixed;
   right: 0;
   z-index: 1;
 
 }
+
 * {
   font-family: 'Poppins', sans-serif;
   color: #F2EDD7FF;
+
 }
 
 li {
@@ -51,22 +61,6 @@ body {
 }
 
 
-span {
-  opacity: 1;
-  transition: animate 0.1s ease;
-}
-
-span.animate {
-  opacity: 1;
-  color: #F2EDD7FF;
-}
-
-.body {
-  float: none;
-  display: inline-block;
-  padding-top: 50px;
-}
-
 /* title */
 .heading {
   top: 0;
@@ -75,7 +69,7 @@ span.animate {
   margin-top: 0px;
   padding-top: 200px;
   padding-left: 75px;
-  padding-bottom: 300px;
+  padding-bottom: 500px;
   margin: 0px;
   opacity: 1;
   -webkit-text-fill-color: transparent;
@@ -124,14 +118,14 @@ h2 {
   padding-top: 60px;
 } */
 
-
 p {
   font-size: 25px;
   font-weight: 400;
   float: left;
   opacity: 1;
-  padding: 0px 100px 300px 100px;
+  padding: 100px 100px 300px 100px;
   margin-top: 0px;
+  display: inline-block;
 
 }
 
@@ -171,9 +165,7 @@ p {
   }
 }
 
-body {
-  height: 10000px;
-}
+
 
 /* .scrolltracker {
   height: .5rem;

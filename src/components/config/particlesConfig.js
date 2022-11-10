@@ -21,7 +21,7 @@ const particlesConfig = {
     enable: false
   },
   fullScreen: {
-    enable: true,
+    enable: false,
     zIndex: -1
   },
   detectRetina: true,
@@ -38,7 +38,8 @@ const particlesConfig = {
         selectors: [],
         enable: true,
         mode: [],
-        type: "circle"
+        type: "circle",
+        opacity: 0
       },
       onHover: {
         enable: true,
@@ -75,9 +76,9 @@ const particlesConfig = {
         }
       },
       connect: {
-        distance: 80,
+        distance: 5,
         links: {
-          opacity: 0.5
+          opacity: 0.1
         },
         radius: 60
       },
@@ -98,7 +99,7 @@ const particlesConfig = {
         quantity: 2
       },
       repulse: {
-        distance: 100,
+        distance: 250,
         duration: 0.4,
         factor: 100,
         speed: 1,
@@ -172,7 +173,7 @@ const particlesConfig = {
           color: {
             value: "#000000"
           },
-          length: 2000
+          length: 20000000
         }
       }
     }
@@ -338,8 +339,8 @@ const particlesConfig = {
         minimumValue: 0.3
       },
       value: {
-        min: 0.3,
-        max: 0.8
+        min: 0,
+        max: 0
       },
       animation: {
         count: 0,
@@ -380,7 +381,7 @@ const particlesConfig = {
       animation: {
         count: 0,
         enable: true,
-        speed: 3,
+        speed: 1,
         decay: 0,
         sync: false,
         destroy: "none",
@@ -397,7 +398,7 @@ const particlesConfig = {
         minimumValue: 0
       },
       value: 0,
-      opacityRate: 1,
+      opacityRate: 0,
       sizeRate: 1,
       velocityRate: 1
     },
@@ -496,9 +497,9 @@ const particlesConfig = {
         opacity: 1
       },
       particles: {
-        enable: false,
+        enable: true,
         frequency: 0.05,
-        opacity: 1
+        opacity: 0
       }
     },
     wobble: {
@@ -518,7 +519,7 @@ const particlesConfig = {
         sync: false
       },
       enable: false,
-      opacity: 1,
+      opacity: 0,
       rotation: {
         random: {
           enable: false,
@@ -537,7 +538,7 @@ const particlesConfig = {
       distance: 100,
       enable: true,
       frequency: 1,
-      opacity: 1,
+      opacity: 0.3,
       shadow: {
         blur: 5,
         color: {
@@ -546,15 +547,15 @@ const particlesConfig = {
         enable: false
       },
       triangles: {
-        enable: false,
-        frequency: 1
+        enable: true,
+        frequency: .001
       },
       width: 1,
       warp: false
     },
     repulse: {
       random: {
-        enable: false,
+        enable: true,
         minimumValue: 0
       },
       value: 0,
@@ -568,7 +569,7 @@ const particlesConfig = {
   pauseOnBlur: true,
   pauseOnOutsideViewport: true,
   responsive: [],
-  smooth: false,
+  smooth: true,
   style: {},
   themes: [],
   zLayers: 100,
