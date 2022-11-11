@@ -263,7 +263,7 @@ const particlesConfig = {
         value: 90
       },
       attract: {
-        distance: 200,
+        distance: 12,
         enable: false,
         rotate: {
           x: 3000,
@@ -327,11 +327,11 @@ const particlesConfig = {
     number: {
       density: {
         enable: true,
-        area: 800,
+        area: 1000,
         factor: 1000
       },
       limit: 0,
-      value: 189
+      value: 15
     },
     opacity: {
       random: {
@@ -340,7 +340,7 @@ const particlesConfig = {
       },
       value: {
         min: 0,
-        max: 0
+        max: 1  
       },
       animation: {
         count: 0,
@@ -473,7 +473,7 @@ const particlesConfig = {
         value: 0
       },
       mode: "vertical",
-      speed: 25
+      speed: 20
     },
     tilt: {
       random: {
@@ -536,7 +536,7 @@ const particlesConfig = {
       },
       consent: false,
       distance: 100,
-      enable: true,
+      enable: false,
       frequency: 1,
       opacity: 0.3,
       shadow: {
@@ -572,7 +572,7 @@ const particlesConfig = {
   smooth: false,
   style: {},
   themes: [],
-  zLayers: 100,
+  zLayers: 1,
   emitters: []
 }
 
