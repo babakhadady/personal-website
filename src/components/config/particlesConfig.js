@@ -99,9 +99,9 @@ const particlesConfig = {
         quantity: 2
       },
       repulse: {
-        distance: 250,
+        distance: 250,      // repulse distance
         duration: 0.4,
-        factor: 100,
+        factor: 50,
         speed: 1,
         maxSpeed: 50,
         easing: "ease-out-quad",
@@ -331,7 +331,7 @@ const particlesConfig = {
         factor: 1000
       },
       limit: 0,
-      value: 15
+      value: 50       // number of particles
     },
     opacity: {
       random: {

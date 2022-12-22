@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const Paragraph = ({ children }) => {
     const ref = useRef();
-    const shouldShow = Visible(ref, 300);
+    const shouldShow = Visible(300);
 
     return (
         <p ref={ref} className={shouldShow ? 'visible' : 'notvisible'}>

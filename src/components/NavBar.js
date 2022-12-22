@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const NavBar = ({ children }) => {
     const ref = useRef();
-    const shouldShow = Visible(ref, 600);
+    const shouldShow = Visible(600);
 
     return (
         <navbar ref={ref} className={shouldShow ? 'visible' : 'notvisible'}>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Visible(ref, size) {
+export default function Visible(size) {
       const [visible, setVisible] = useState(true)
   
       const controlNav = () => {
@@ -11,7 +11,7 @@ export default function Visible(ref, size) {
         return () => {
           window.removeEventListener('scroll', controlNav)
         }
-      }, [])
+      }, )
   
       return visible
 }
