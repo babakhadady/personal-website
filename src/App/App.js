@@ -7,6 +7,7 @@ import Header2 from "../components/Header/Header2";
 import Header3 from "../components/Header/Header3";
 import Projects from "../components/Projects/Projects"
 import Paragraph from "../components/Paragraph/Paragraph";
+import Skills from "../components/Skills/Skills"
 import ParticlesBackground from "../components/ParticlesBackground/ParticlesBackground";
 
 
@@ -39,6 +40,7 @@ export default function App() {
 
   return (
     <div>
+      <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
       <ParticlesBackground />
       <NavBar />
 
@@ -60,7 +62,7 @@ export default function App() {
         </Paragraph>
         <Paragraph offset={175} offsetY={scrollPosition.scrollY}>
           <Fade delay={1150}>
-            and Teaching Assistant at the University of British Columbia
+            and Teaching Assistant at the University of British Columbia.
           </Fade>
         </Paragraph>
         <Paragraph offset={200} offsetY={scrollPosition.scrollY}>
@@ -71,13 +73,21 @@ export default function App() {
       </section>
 
       <section className="projects">
-        <Header3 offset={1000} offsetY={scrollPosition.scrollY}>
+        <Header3 offset={350} offsetY={scrollPosition.scrollY}>
           Projects
         </Header3>
 
         <Projects offset={300} offsetY={scrollPosition.scrollY} />
 
       </section>
+
+      <section className="skills-container">
+        <Header3 offset={1000} offsetY={-800 + scrollPosition.scrollY}>
+          Skills
+        </Header3>
+        <Skills offset={1000} />
+      </section>
+
 
     </div >
   );

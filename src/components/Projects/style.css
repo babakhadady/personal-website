@@ -22,11 +22,11 @@
     font-size: 1.5vh;
 }
 
-#project-container:hover {
+.project-container:hover {
     transform: scale(10);
 }
 
-#project-container {
+.project-container {
     opacity: 1;
     z-index: 100;
     background-color: rgba(15, 13, 13, 1);
@@ -36,7 +36,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    border-style: solid;
     border: 2px solid white;
     border-radius: 10px;
     overflow: hidden;
@@ -47,3 +46,4 @@ img {
     height: 100%;
     border-radius: 5px;
 }
+

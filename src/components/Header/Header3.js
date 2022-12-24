@@ -10,7 +10,7 @@ const Header3 = ({ children, offset, offsetY }) => {
         <h3 ref={ref} className={shouldShow ? 'visible' : 'notvisible'}
             style={{
                 transform: `translateY(-${offsetY * .8}px`,
-                opacity: `${-1 + .01 * offsetY}`
+                opacity: (shouldShow ? `${-1 + .07 * offsetY}` : 0)
             }}>
             {children}
         </h3>

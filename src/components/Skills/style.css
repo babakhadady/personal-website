@@ -1,0 +1,17 @@
+.skills {
+    position: relative;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.skills-ul {
+    position: relative;
+    columns:3;
+}
+
+.skill {
+    padding-bottom: 20px;
+}

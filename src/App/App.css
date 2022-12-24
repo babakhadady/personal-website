@@ -25,6 +25,21 @@ html {
   opacity: 0;
   transition-timing-function: ease-out;
   transition: 1s;
+  background-color: transparent;
+}
+
+#visible {
+  transition-timing-function: ease-in;
+  border-style: solid;
+  transition: 1s;
+  opacity: 1;
+}
+
+#notvisible {
+  opacity: 0;
+  transition-timing-function: ease-out;
+  transition: 1s;
+  background-color: transparent;
 }
 
 * {
@@ -55,7 +70,17 @@ body {
 }
 
 .projects {
-  top: 30vh;
+  top: 40vh;
   position: relative;
   text-align: center;
+}
+
+.skills-container {
+  width: 75vw;
+  top: 5vh;
+  position: relative;
+  text-align: center;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
 }
