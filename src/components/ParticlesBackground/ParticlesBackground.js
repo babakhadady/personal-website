@@ -1,7 +1,8 @@
 import { loadFull } from "tsparticles";
 import Particles from "react-tsparticles";
-import particlesConfig from "./config/particlesConfig"
+import particlesConfig from "../config/particlesConfig";
 import React from "react";
+import "./style.css";
 
 
 const ParticlesBackground = () => {

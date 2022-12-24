@@ -1,12 +1,16 @@
-import ParticlesBackground from "../components/ParticlesBackground";
 import "./App.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
-import NavBar from "../components/NavBar";
-import Header from "../components/Header";
-import Header2 from "../components/Header2";
-import Paragraph from "../components/Paragraph";
-import Box from "../components/Box";
+import NavBar from "../components/NavBar/NavBar";
+import Header from "../components/Header/Header";
+import Header2 from "../components/Header/Header2";
+import Header3 from "../components/Header/Header3";
+import Projects from "../components/Projects/Projects"
+import Paragraph from "../components/Paragraph/Paragraph";
+import ParticlesBackground from "../components/ParticlesBackground/ParticlesBackground";
+
+
+
 
 export default function App() {
 
@@ -19,76 +23,62 @@ export default function App() {
     window.scrollTo(0, 0);
   }
 
+  const [scrollPosition, setPosition] = useState({ scrollX: 0, scrollY: 0 })
+
+  useEffect(() => {
+    function updatePosition() {
+      setPosition({ scrollX: window.scrollX, scrollY: window.scrollY })
+    }
+
+    window.addEventListener('scroll', updatePosition)
+    updatePosition()
+
+    return () => window.removeEventListener('scroll', updatePosition)
+  }, [])
+
 
   return (
     <div>
-      <div>
-        <NavBar>
-          <ul className="details">
-            <li><a href="">CONTACT</a></li>
-            <li><a href="downloads/babak hadady.docx" download>RESUME</a></li>
-            <li><a href="https://www.linkedin.com/in/babak-hadady-50a857201/">LINKEDIN</a></li>
-            <li><a href="#experience">EXPERIENCES</a></li>
-            <li><a href="#aboutme">ABOUT ME</a></li>
-          </ul>
-        </NavBar>
-      </div>
+      <ParticlesBackground />
+      <NavBar />
 
-      {/* <div className="body">
-        <Fade bottom>
-          <h1 className="heading listitems"> Hello. </h1>
-          <p>
-            My name is Babak Hadady, I am currently a Computer Science major at the University of
-            British Columbia graduating in 2025.
-            I am seeking a coop term for September 2023.
-          </p>
-          <h2 className="listitems"> About </h2>
-          <h2 className="listitems experience" id="experience"> Experiences </h2>
-        </Fade>
-      </div> */}
-
-      <ParticlesBackground></ParticlesBackground>
-
-      <div>
-
-        <Header>
-          <Fade cascade bottom delay={50}>
-            <h1>Hello</h1>
+      <section className="container-main">
+        <Header offset={25} offsetY={10 + scrollPosition.scrollY}>
+          <Fade bottom delay={50}>
+            Babak
           </Fade>
-
         </Header>
-        {/* <p ref={myRef} className={(isVisible ? 'fadeIn' : 'fadeOut')}>
-          My name is Babak Hadady, I am currently a Computer Science major at the University of
-          British Columbia graduating in 2025. I am also a undergraduate teaching assistant for CPSC 110, 
-          an introductory computer science course.
-        </p>
-        <h2 ref={myRef} className={(isVisible ? 'fadeIn' : 'fadeOut')} id="aboutme"> About </h2> */}
-        {/* <h2 ref={myRef} className={(isVisible ? 'fadeIn' : 'fadeOut')} id="experience"> Experiences </h2> */}
-        <Paragraph>
-          <Fade big delay={1000}>
-            <p> My name is Babak Hadady. I'm currently a Computer Science student and teaching assitant at UBC. </p>
+        <Header2 offset={125} offsetY={10 + scrollPosition.scrollY}>
+          <Fade delay={500}>
+            CS Student and Teaching Assistant
+          </Fade>
+        </Header2>
+        <Paragraph offset={150} offsetY={scrollPosition.scrollY}>
+          <Fade delay={1000}>
+            I'm a third year undergraduate Computer Science student
           </Fade>
         </Paragraph>
-
-
-
-        <section className="about">
-          <Header2 offset={2000}>
-            <Fade bottom delay={700}>
-              <h2>About Me</h2>
-            </Fade>
-          </Header2>
-          <Fade delay={3500}>
-            <Box>
-              <span>
-                I'm currently seeking an intern opportunity for September 2023.
-              </span>
-            </Box>
+        <Paragraph offset={175} offsetY={scrollPosition.scrollY}>
+          <Fade delay={1150}>
+            and Teaching Assistant at the University of British Columbia
           </Fade>
-        </section>
+        </Paragraph>
+        <Paragraph offset={200} offsetY={scrollPosition.scrollY}>
+          <Fade delay={1300}>
+            I'm seeking an intern opportunity for September 2023.
+          </Fade>
+        </Paragraph>
+      </section>
 
+      <section className="projects">
+        <Header3 offset={1000} offsetY={scrollPosition.scrollY}>
+          Projects
+        </Header3>
 
-      </div>
+        <Projects offset={300} offsetY={scrollPosition.scrollY} />
+
+      </section>
+
     </div >
   );
 }

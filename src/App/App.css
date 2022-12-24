@@ -5,6 +5,10 @@
   /*URL to font*/
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 100%;
   z-index: -1;
@@ -19,46 +23,16 @@
 
 .notvisible {
   opacity: 0;
-  transition-timing-function: ease-in;
-  transition: .25s;
-
-}
-
-NavBar {
-  right: 0;
-  z-index: 1;
-  position: fixed;
-  display: grid;
-  background-color: #0f0f0f;
-  width: 100%;
+  transition-timing-function: ease-out;
+  transition: 1s;
 }
 
 * {
   font-family: Acumin;
   /* color: #F2EDD7FF; */
   color: white;
-}
-
-li {
-  display: inline;
-}
-
-a {
-  overflow: hidden;
-  color: white;
-  text-decoration: none;
-  font-size: 2.2vh;
-  font-weight: 600px;
-  /* animation: color-change 6s infinite; */
-  letter-spacing: 5px;
-  margin-right: 20px;
-  float: right;
-  margin-top: 20px;
-  padding: 10px;
-}
-
-a:hover {
-  -webkit-text-stroke: 1.25px rgb(255, 255, 255);
+  line-height: .7em;
+  animation: ease-out;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -74,85 +48,14 @@ body {
   scrollbar-width: none;
 }
 
-/* title */
-h1 {
-  top: 0;
-  font-size: 20vw;
-  margin-top: 0px;
-  padding-top: 125px;
-  padding-left: 1.5rem;
-  letter-spacing: -10px;
-  opacity: 1;
+.container-main {
+  top: 20vh;
   position: relative;
-  overflow-wrap: break-word;
-  margin: 0;
+  text-align: center;
 }
 
-h2 {
-  font-size: 10vw;
-  padding-top: 50vh;
-  padding-left: 2rem;
-  letter-spacing: -10px;
-  opacity: 1;
-  overflow-wrap: break-word;
-  margin: 0;
-
+.projects {
+  top: 30vh;
+  position: relative;
+  text-align: center;
 }
-
-.about {
-  top: 5vw;
-
-}
-
-p {
-  align: left;
-  font-size: 3vh;
-  font-weight: -5px;
-  float: left;
-  padding-left: 2rem;
-  overflow-wrap: break-word;
-  letter-spacing: -.5px;
-  padding-right: 20rem;
-}
-
-.box {
-  font-size: 3vh;
-  align: left;
-  padding-top: 1vh; 
-  padding-left: 2rem;
-
-}
-
-/* .coop {
-  font-size: 25px;
-  font-weight: 400;
-  padding-top: 2;
-  margin-left: 25px;
-  float: left;
-  opacity: 0;
-} */
-
-
-/* COLOUR CHANGE */
-@keyframes color-change {
-  33% {
-    opacity: 1;
-  }
-
-  66% {
-    opacity: .5;
-  }
-
-  99% {
-    opacity: 1;
-  }
-}
-
-
-
-/* .scrolltracker {
-  height: .5rem;
-  inset: 0 0 auto;
-  background-color: F2EDD7FF;
-  position: fixed;
-} */
