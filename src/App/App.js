@@ -8,9 +8,10 @@ import Header3 from "../components/Header/Header3";
 import Projects from "../components/Projects/Projects"
 import Paragraph from "../components/Paragraph/Paragraph";
 import Skills from "../components/Skills/Skills"
+import Contact from "../components/Contact/Contact";
+import Experiences from "../components/Experiences/Experiences";
 import ParticlesBackground from "../components/ParticlesBackground/ParticlesBackground";
-
-
+import { Route, Router, BrowserRouter } from "react-router-dom";
 
 
 export default function App() {
@@ -40,54 +41,63 @@ export default function App() {
 
   return (
     <div>
-      <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-      <ParticlesBackground />
-      <NavBar />
+      <BrowserRouter>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <ParticlesBackground />
+        <NavBar />
 
-      <section className="container-main">
-        <Header offset={25} offsetY={10 + scrollPosition.scrollY}>
-          <Fade bottom delay={50}>
-            Babak
-          </Fade>
-        </Header>
-        <Header2 offset={125} offsetY={10 + scrollPosition.scrollY}>
-          <Fade delay={500}>
-            CS Student and Teaching Assistant
-          </Fade>
-        </Header2>
-        <Paragraph offset={150} offsetY={scrollPosition.scrollY}>
-          <Fade delay={1000}>
-            I'm a third year undergraduate Computer Science student
-          </Fade>
-        </Paragraph>
-        <Paragraph offset={175} offsetY={scrollPosition.scrollY}>
-          <Fade delay={1150}>
-            and Teaching Assistant at the University of British Columbia.
-          </Fade>
-        </Paragraph>
-        <Paragraph offset={200} offsetY={scrollPosition.scrollY}>
-          <Fade delay={1300}>
-            I'm seeking an intern opportunity for September 2023.
-          </Fade>
-        </Paragraph>
-      </section>
+        <section className="container-main">
+          <Header offset={25} offsetY={10 + scrollPosition.scrollY}>
+            <Fade bottom delay={50}>
+              Babak
+            </Fade>
+          </Header>
+          <Header2 offset={125} offsetY={10 + scrollPosition.scrollY}>
+            <Fade delay={500}>
+              CS Student and Teaching Assistant
+            </Fade>
+          </Header2>
+          <Paragraph offset={150} offsetY={scrollPosition.scrollY}>
+            <Fade delay={1000}>
+              I'm a third year undergraduate Computer Science student
+            </Fade>
+          </Paragraph>
+          <Paragraph offset={175} offsetY={scrollPosition.scrollY}>
+            <Fade delay={1150}>
+              and Teaching Assistant at the University of British Columbia.
+            </Fade>
+          </Paragraph>
+          <Paragraph offset={200} offsetY={scrollPosition.scrollY}>
+            <Fade delay={1300}>
+              I'm seeking an intern opportunity for September 2023.
+            </Fade>
+          </Paragraph>
+        </section>
 
-      <section className="projects">
-        <Header3 offset={350} offsetY={scrollPosition.scrollY}>
-          Projects
-        </Header3>
+        <section className="projects">
+          <Header3 offset={350} offsetY={scrollPosition.scrollY}>
+            Projects
+          </Header3>
 
-        <Projects offset={300} offsetY={scrollPosition.scrollY} />
+          <Projects offset={300} offsetY={scrollPosition.scrollY} />
 
-      </section>
+        </section>
 
-      <section className="skills-container">
-        <Header3 offset={1000} offsetY={-800 + scrollPosition.scrollY}>
-          Skills
-        </Header3>
-        <Skills offset={1000} />
-      </section>
+        <section className="skills-container">
+          <Header3 offset={1100} offsetY={-900 + scrollPosition.scrollY}>
+            Skills
+          </Header3>
+          <Skills offset={1100} offsetY={-1000 + scrollPosition.scrollY} />
+        </section>
 
+        <section className="experience" >
+          <Experiences offset={15000} offsetY={-1100+scrollPosition.scrollY}>
+          
+          </Experiences>
+        </section>
+
+        <Contact></Contact>
+      </BrowserRouter>
 
     </div >
   );

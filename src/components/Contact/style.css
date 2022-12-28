@@ -1,0 +1,21 @@
+.contact-text {
+    text-decoration: none;
+    font-size: 2vh;
+    padding-right: 50px;    
+    padding-left: 10px;
+    color: white;
+    /* animation: color-change 6s infinite; */
+    letter-spacing: .25px;
+    padding-top: 17px; 
+
+
+
+}
+
+.contact-body {
+    display: inline-flex;
+}
+
+.contact-icon {
+    width: 100%;
+}

@@ -9,11 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.wrapper {
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-}
 
 .visible {
   transition-timing-function: ease-in;
@@ -30,7 +25,6 @@ html {
 
 #visible {
   transition-timing-function: ease-in;
-  border-style: solid;
   transition: 1s;
   opacity: 1;
 }
@@ -83,4 +77,16 @@ body {
   float: center;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 100px;
+}
+
+.experience {
+  position: relative;
+  text-align: center;
+}
+
+.contact {
+  position: relative;
+  text-align: center;
+  
 }

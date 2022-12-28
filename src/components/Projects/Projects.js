@@ -16,10 +16,10 @@ const Projects = ({ offset, offsetY }) => {
             <div ref={ref} className={"project-container " + (shouldShow1 ? 'visible' : 'notvisible')}
                 style={{
                     transform: `translateY(-${offsetY * .8}px`,
-                    opacity: (shouldShow1 ? `${-1 + .009 * offsetY}` : 0)
+                    // opacity: (shouldShow1 ? `${-1 + .009 * offsetY}` : 0)
                 }}>
                 <div className="image-container">
-                    <img src={scale} />
+                    <img src={scale} alt=""/>
                 </div>
                 <div className="text-container">
                     <div className="text-header "> QuickCards </div>
@@ -31,12 +31,12 @@ const Projects = ({ offset, offsetY }) => {
             <div ref={ref} className={"project-container "} id={(shouldShow2 ? 'visible' : 'notvisible')}
                 style={{
                     transform: `translateY(-${offsetY * .7}px`,
-                    opacity: (shouldShow2 ? `${-1 + .007 * offsetY}` : 0)
+                    // opacity: (shouldShow2 ? `${-1 + .007 * offsetY}` : 0)
                 }}>
 
                 <div className={"image-container "}
                     >
-                    <img src={scale} />
+                    <img src={scale} alt=""/>
                 </div>
                 <div className={"text-container " }>
                     <div className={"text-header "}> QuickCards </div>
@@ -48,10 +48,10 @@ const Projects = ({ offset, offsetY }) => {
             <div ref={ref} className={"project-container " + (shouldShow3 ? 'visible' : 'notvisible')}
                 style={{
                     transform: `translateY(-${offsetY * .6}px`,
-                    opacity: (shouldShow3 ? `${-1 + .005 * offsetY}` : 0)
+                    // opacity: (shouldShow3 ? `${-1 + .005 * offsetY}` : 0)
                 }}>
                 <div className="image-container">
-                    <img src={scale} />
+                    <img src={scale} alt=""/>
                 </div>
                 <div className="text-container">
                     <div className="text-header "> QuickCards </div>
