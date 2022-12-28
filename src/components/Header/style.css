@@ -16,7 +16,8 @@ h2 {
 }
 
 h3 {
-    font-size: 10vh;
+    font-size: 5vh;
     opacity: 1;
-
+    padding-bottom: 25px;
+    text-align: center;
 }
