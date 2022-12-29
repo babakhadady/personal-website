@@ -1,1 +1,1 @@
-My fully-responsive Personal Website, built with React.js 
+My fully-responsive Personal Website, built with ReactJS
