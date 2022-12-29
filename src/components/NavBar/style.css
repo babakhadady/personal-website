@@ -5,9 +5,8 @@
         font-size: 1.75vh;
         font-weight: 800px;
         /* animation: color-change 6s infinite; */
-        letter-spacing: 5px;
-        margin-right: 20px;
-        margin-top: 20px;
+        letter-spacing: .25vw;
+        margin-right: 1vw;
         padding: 10px;
 }
 
@@ -20,12 +19,12 @@ li {
 }
 
 .navbar {
-    padding-top: 5px;
     z-index: 1;
     position: fixed;
     display: grid;
     width: 100%;
     text-align: center;
+
 }
 
 a:hover {

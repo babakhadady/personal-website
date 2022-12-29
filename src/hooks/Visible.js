@@ -13,5 +13,5 @@ export default function Visible(size) {
         }
       }, )
   
-      return true
+      return visible
 }

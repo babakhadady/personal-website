@@ -10,14 +10,14 @@ const Skills = ({ children, offset, offsetY }) => {
 
     return (
 
-        <div ref={ref} className={"skills " + (shouldShow ? 'visible' : 'notvisible')}
+        <div ref={ref} className={"skills "} data-aos="fade"
             style={{
-                transform: `translateY(-${offsetY * .99}px`
+                // transform: `translateY(-${offsetY * .99}px`
             }}
         >
 
             <ul className={"skills-ul"}>
-                <ul>
+                <ul >
                     <li >
                         <Icon className={"icon"} icon="vscode-icons:file-type-cpp3" />
                         <p className="skill">C++</p>
@@ -55,12 +55,12 @@ const Skills = ({ children, offset, offsetY }) => {
                         <p className="skill">React</p>
 
                     </li>
-                    <li  >
+                    <li >
                         <Icon className={"icon"} icon="file-icons:latex" />
                         <p className="skill">TeX</p>
 
                     </li>
-                    <li  id="experiences">
+                    <li  >
                         <Icon className={"icon"} icon="logos:git-icon" />
                         <p className="skill">Git</p>
 

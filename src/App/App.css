@@ -58,7 +58,7 @@ body {
 }
 
 .container-main {
-  top: 20vh;
+  top: 25vh;
   position: relative;
   text-align: center;
 }
@@ -71,12 +71,12 @@ body {
 
 .skills-container {
   width: 75vw;
-  top: 5vh;
   position: relative;
   text-align: center;
   float: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 70vh;
   padding-bottom: 100px;
 }
 

@@ -5,7 +5,7 @@ h1 {
     opacity: 1;
     overflow-wrap: break-word;
     margin: 0;
-    animation: ease-in
+    animation: ease-in;
 }
 
 h2 {

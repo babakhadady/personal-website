@@ -23,7 +23,8 @@
 }
 
 .project-container:hover {
-    transform: scale(10);
+    transform: scale(1.1);
+    
 }
 
 .project-container {
@@ -35,6 +36,10 @@
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    margin: 2vh auto;
+    border-style: solid;
+    border-color: #929292;
+
 }
 
 img {

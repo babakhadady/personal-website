@@ -2,6 +2,7 @@ import Visible from "../../hooks/Visible";
 import { useRef } from "react";
 import "./style.css";
 import Paragraph from "../Paragraph/Paragraph";
+import Header3 from "../Header/Header3";
 
 const Experiences = ({ children, offset, offsetY }) => {
     const ref = useRef();
@@ -9,12 +10,8 @@ const Experiences = ({ children, offset, offsetY }) => {
 
     return (
         <div>
-            <h3 ref={ref} className={shouldShow ? 'visible' : 'notvisible'}
-                style={{ transform: `translateY(-${offsetY * 1.5}px` }}
-                 >
-                Experiences
-            </h3>
-            <ul style={{ transform: `translateY(-${offsetY * 1.25}px` }}>
+            <Header3>Experiences</Header3>
+            <ul>
                 <li>
                     <div className="experience-container">
                         <div className="experience-heading">

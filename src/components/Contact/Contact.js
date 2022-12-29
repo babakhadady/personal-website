@@ -9,8 +9,7 @@ const Contact = ({ children, offset, offsetY }) => {
     const shouldShow = Visible(offset);
 
     return (
-        <h3 ref={ref} className={shouldShow ? 'visible' : 'notvisible'}
-            style={{ }} >
+        <h3 >
 
             Contact
             <ul>
@@ -24,7 +23,7 @@ const Contact = ({ children, offset, offsetY }) => {
                 </li>
                 <li className="contact-body">
                     <Icon className="contact-icon" icon="material-symbols:mail" />
-                    <a className="contact-text"a>babakhadady</a>
+                    <a className="contact-text" href="mailto:hadadybabak@gmail.com">/babakhadady</a>
                 </li>
             </ul>
         </h3>
