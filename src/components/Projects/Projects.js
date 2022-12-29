@@ -12,14 +12,14 @@ const Projects = ({ offset, offsetY }) => {
 
 
     return (
-        <div>
-            <div ref={ref} className={"project-container " + (shouldShow1 ? 'visible' : 'notvisible')}
+        <div >
+            <div ref={ref} className={"project-container "}  data-aos="fade"
                 style={{
-                    transform: `translateY(-${offsetY * .8}px`,
+                    // transform: `translateY(${offsetY * .75}px`,
                     // opacity: (shouldShow1 ? `${-1 + .009 * offsetY}` : 0)
                 }}>
                 <div className="image-container">
-                    <img src={scale} alt=""/>
+                    <img src={scale} alt="" />
                 </div>
                 <div className="text-container">
                     <div className="text-header "> QuickCards </div>
@@ -28,30 +28,30 @@ const Projects = ({ offset, offsetY }) => {
                 </div>
             </div>
 
-            <div ref={ref} className={"project-container "} id={(shouldShow2 ? 'visible' : 'notvisible')}
+            <div ref={ref} className={"project-container "} data-aos="fade"
                 style={{
-                    transform: `translateY(-${offsetY * .7}px`,
+                    // transform: `translateY(${offsetY * .65}px`,
                     // opacity: (shouldShow2 ? `${-1 + .007 * offsetY}` : 0)
                 }}>
 
                 <div className={"image-container "}
-                    >
-                    <img src={scale} alt=""/>
+                >
+                    <img src={scale} alt="" />
                 </div>
-                <div className={"text-container " }>
+                <div className={"text-container "}>
                     <div className={"text-header "}> QuickCards </div>
                     <div className={"text-body "}> Body of text</div>
                     <div className={"text-body "}>Second Line</div>
                 </div>
             </div>
 
-            <div ref={ref} className={"project-container " + (shouldShow3 ? 'visible' : 'notvisible')}
+            <div ref={ref} className={"project-container " } data-aos="fade"
                 style={{
-                    transform: `translateY(-${offsetY * .6}px`,
+                    // transform: `translateY(${offsetY * .55}px`,
                     // opacity: (shouldShow3 ? `${-1 + .005 * offsetY}` : 0)
                 }}>
                 <div className="image-container">
-                    <img src={scale} alt=""/>
+                    <img src={scale} alt="" />
                 </div>
                 <div className="text-container">
                     <div className="text-header "> QuickCards </div>

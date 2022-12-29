@@ -7,10 +7,10 @@ const Header3 = ({ children, offset, offsetY }) => {
     const shouldShow = Visible(offset);
 
     return (
-        <h3 ref={ref} className={shouldShow ? 'visible' : 'notvisible'}
+        <h3 ref={ref} data-aos="fade-out" data-dura
             style={{
-                transform: `translateY(-${offsetY * .8}px`,
-                // opacity: (shouldShow ? `${-1 + .1 * offsetY}` : 0)
+                // transform: `translateY(${offsetY * 0.75}px`,
+                
             }}>
             {children}
         </h3>
