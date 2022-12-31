@@ -8,7 +8,7 @@ const Header = ({ children, offset, offsetY }) => {
 
     return (
         <h1 ref={ref} className={shouldShow ? 'visible' : 'notvisible'}
-            style={{ transform: `translateY(-${offsetY * 1.5}px`  }} >
+            style={{ transform: (`translateY(-${offsetY * 1.5}px`  )}} >
 
             {children}
         </h1>
