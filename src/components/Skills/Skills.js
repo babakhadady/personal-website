@@ -49,8 +49,9 @@ const Skills = ({ children, offset, offsetY }) => {
                     </li>
                 </ul>
 
+
                 <ul>
-                    <li  >
+                    <li >
                         <Icon className={"icon"} icon="logos:react" />
                         <p className="skill">React</p>
 
@@ -62,10 +63,29 @@ const Skills = ({ children, offset, offsetY }) => {
                     </li>
                     <li  >
                         <Icon className={"icon"} icon="logos:git-icon" />
-                        <p className="skill">Git</p>
+                        <p className="skill" >Git</p>
 
                     </li>
                 </ul>
+
+                <ul>
+                    <li>
+                        <Icon className="icon express" icon="simple-icons:express" />
+                        <p className="skill">Express </p>
+
+                    </li>
+
+                    <li>
+                        <Icon className="icon" icon="vscode-icons:file-type-node" />
+                        <p className="skill">Node.js</p>
+                    </li>
+
+                    <li>
+                        <Icon className="icon" icon="logos:bootstrap" />
+                        <p className="skill"> Bootstrap</p>
+                    </li>
+                </ul>
+
 
 
 

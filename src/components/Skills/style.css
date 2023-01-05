@@ -1,7 +1,9 @@
 .skills {
     position: relative;
+    
 }
 
+.express {}
 .icon {
     width: 100px;
     height: 100px;
@@ -13,7 +15,7 @@
 
 .skills-ul {
     position: relative;
-    columns:3;
+    columns:4;
 }
 
 .skill {
