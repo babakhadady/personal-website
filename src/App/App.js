@@ -26,9 +26,7 @@ export default function App() {
 
   }, [])
 
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
+
 
   const [scrollPosition, setPosition] = useState({ scrollX: 0, scrollY: 0 })
 
@@ -48,9 +46,7 @@ export default function App() {
     <div>
       <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
-      <ParticlesBackground />
-
-      
+      <ParticlesBackground height={document.documentElement.offsetHeight} />
       <NavBar />
      
       <section className="container-main">
@@ -83,23 +79,23 @@ export default function App() {
   
       </section>
 
-      <section className="projects">
-        <Header3 offset={350} offsetY={scrollPosition.scrollY}>
+      <section className="projects" id="projects">
+        <Header3 offset={500} offsetY={scrollPosition.scrollY}>
           Projects
         </Header3>
 
-        <Projects offset={300} offsetY={scrollPosition.scrollY} />
+        <Projects offset={1} offsetY={scrollPosition.scrollY} />
 
       </section>
 
-      <section className="skills-container">
+      <section className="skills-container" >
         <Header3 offset={1100} offsetY={-900 + scrollPosition.scrollY}>
           Skills
         </Header3>
-        <Skills offset={1100} offsetY={-1000 + scrollPosition.scrollY} />
+        <Skills id="experience" offset={1100} offsetY={-1000 + scrollPosition.scrollY} />
       </section>
 
-      <section className="experience" >
+      <section className="experience"  >
         <Experiences offset={15000} offsetY={-1100 + scrollPosition.scrollY}>
 
         </Experiences>

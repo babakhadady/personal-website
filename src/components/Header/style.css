@@ -12,12 +12,12 @@ h2 {
     font-size: 3vh;
     opacity: 1;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 
 h3 {
-    font-size: 5vh;
+    margin-bottom: 50px;
+    font-size: 6vh;
     opacity: 1;
-    padding-bottom: 25px;
     text-align: center;
 }

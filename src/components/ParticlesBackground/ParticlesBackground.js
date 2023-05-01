@@ -5,15 +5,15 @@ import React from "react";
 import "./style.css";
 
 
-const ParticlesBackground = () => {
+const ParticlesBackground = (height) => {
     const particlesInit = async (main) => {
-        console.log(main);
+        // console.log(main);
         await loadFull(main);
-      };
+      };      
 
     return (
         <Particles options={particlesConfig} init={particlesInit} 
-        className={"wrapper"} height={5000} />
+        className={"wrapper"} height={height.height} />
     )
 }
 

@@ -19,31 +19,18 @@ const Experiences = ({ children, offset, offsetY }) => {
                         <div className="experience-date">
                             January 2021 - Present
                         </div>
-                        <div className="experience-body">CPSC 100 Computational Thinking</div>
-                        <div className="experience-body">CPSC 107 Systematic Program Design</div>
-                        <div className="experience-body">CPSC 110 Computation, Programs, and Programming </div>
-                        <div className="experience-body">CPSC 210 Software Construction </div>
+                        <div className="experience-body">•  Collaborated with professors during class lectures to assist with student learning.</div>
+                        <div className="experience-body">• Supervised laboratories of 30 students where core content is facilitated.</div>
+                        <div className="experience-body">• Coordinated with a teaching team to develop strategies to strengthen learning.</div>
+                        <div className="experience-body">• Conducted office hours for students to seek additional help in course content and prepare for upcoming
+                            examinations.</div>
+                        <div className="experience-body">• Guided students in developing a course project in Java using various design principles such as OOP and
+                            implement features such as a GUI using Java Swing and data persistence using JSON.</div>
 
-                        <div className="experience-body"> Work alongside professors during class lectures to assist in student learning.  </div>
-                        <div className="experience-body">Supervise laboratories with 30 students where core content is facilitated.</div>
-                        <div className="experience-body"> Coordinate with a teaching team to develop strategies to strengthen learning.</div>
-                    </div>
-                </li>
-
-                <li>
-                    <div className="experience-container">
-                        <div className="experience-heading">
-                            University of British Columbia
-                        </div>
-                        <div className="experience-date">
-                            September 2020 - Present
-                        </div>
-                        <div className="experience-body">Third year in Bachelor of Science </div>
-                        <div className="experience-body">Major in Computer Science</div>
-                        <div className="experience-body">Minor in Mathematics</div>
 
                     </div>
                 </li>
+
             </ul>
         </div>
     )

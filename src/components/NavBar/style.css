@@ -1,32 +1,29 @@
 .nav {
-        overflow: hidden;
         color: white;
         text-decoration: none;
         font-size: 1.75vh;
         font-weight: 800px;
         /* animation: color-change 6s infinite; */
         letter-spacing: .25vw;
-        margin-right: 1vw;
-        padding: 10px;
+        padding: 1.5vw;
 }
 
 #transition {
     transition: .1s;
 }
 
+.details {
+    margin-top: 2vh;
+}
 li {
     display: inline;
 }
 
 .navbar {
-    z-index: 1;
-    position: fixed;
-    display: grid;
     width: 100%;
     text-align: center;
-
 }
 
 a:hover {
-    -webkit-text-stroke: .5px rgb(255, 255, 255);
+    -webkit-text-stroke: .65px rgb(255, 255, 255);
 }

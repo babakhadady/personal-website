@@ -9,10 +9,9 @@ const Contact = ({ children, offset, offsetY }) => {
     const shouldShow = Visible(offset);
 
     return (
-        <h3 >
-
-            Contact
-            <ul>
+     <div className="contact-padding">
+          
+            <ul className="contact-list">
                 <li className="contact-body">
                     <Icon className="contact-icon" icon="mdi:linkedin" />
                     <a target="_blank" className="contact-text" href="https://www.linkedin.com/in/babak-hadady-50a857201/" >linkedin/babakhadady</a>
@@ -26,7 +25,7 @@ const Contact = ({ children, offset, offsetY }) => {
                     <a className="contact-text" href="mailto:hadadybabak@gmail.com">/babakhadady</a>
                 </li>
             </ul>
-        </h3>
+     </div>
     )
 }
 

@@ -1,19 +1,29 @@
 .contact-text {
     text-decoration: none;
     font-size: 2vh;
-    padding-right: 50px;    
+    padding-right: 50px;
     padding-left: 10px;
     color: white;
     /* animation: color-change 6s infinite; */
     letter-spacing: .25px;
-    padding-top: 17px; 
+}
+
+.contact-list {
+    text-align: center;
+    font-size: 3vw;
+}
 
 
-
+.contact-padding {
+    padding-top: 250px;
 }
 
 .contact-body {
+    justify-content: center;
+    align-items: center;
     display: inline-flex;
+    top: 100%;
+    margin-bottom: 0px;
 }
 
 .contact-icon {

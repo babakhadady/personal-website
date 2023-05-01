@@ -1,14 +1,17 @@
 .experience-container {
     opacity: 1;
     background-color: #0f0f0f;
-    width: 500px;
-    height: 300px;
-    margin-top: 100px;
-    border-color: white;
-    border-style: solid;
+    width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    margin: 2vh auto;
+    border-style: solid;
+    border-color: #929292;
 }
+
+
 
 ul {
     padding-left: 0px;
@@ -17,15 +20,26 @@ ul {
 .experience-heading {
     font-size: 2.5vh;
     padding-top: 20px;
+    padding-bottom: 8px;
 }
 
 .experience-date {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 1vh;
+    font-size: 2vh;
+    letter-spacing: .1px;
+    line-height: 2.5vh;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .experience-body {
-    font-size: 1.5vh;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-bottom: 1vh;
+    font-size: 1.75vh;
+    letter-spacing: .1px;
+    line-height: 2.5vh;
+    padding-left: 5px;
+    padding-right: 5px;
 }
+
+
+
