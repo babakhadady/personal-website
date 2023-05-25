@@ -331,7 +331,7 @@ const particlesConfig = {
         factor: 1000
       },
       limit: 0,
-      value: 50       // number of particles
+      value: 75       // number of particles
     },
     opacity: {
       random: {
@@ -375,8 +375,8 @@ const particlesConfig = {
         minimumValue: 1
       },
       value: {
-        min: 1,
-        max: 3
+        min: 0.5,
+        max: 1
       },
       animation: {
         count: 0,
