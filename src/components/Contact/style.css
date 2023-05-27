@@ -11,11 +11,12 @@
 .contact-list {
     text-align: center;
     font-size: 3vw;
+    margin-bottom: 10px;
 }
 
 
 .contact-padding {
-    padding-top: 250px;
+    padding-top: 150px;
 }
 
 .contact-body {
