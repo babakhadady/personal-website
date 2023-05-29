@@ -54,6 +54,8 @@ body {
   -ms-overflow-style: none;
   /* Firefox */
   scrollbar-width: none;
+  height: 100%;
+  margin: 0;
 }
 
 .container-main {
@@ -82,7 +84,6 @@ body {
 
 .experience {
   position: relative;
-  text-align: center;
 }
 
 .contact {
