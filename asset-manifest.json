@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.eccbf48a.css",
-    "main.js": "/static/js/main.c3e5c195.js",
-    "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
+    "main.css": "/static/css/main.4a95d0b4.css",
+    "main.js": "/static/js/main.6d0bb0ee.js",
+    "static/js/787.365be13a.chunk.js": "/static/js/787.365be13a.chunk.js",
     "static/media/Acumin-Pro-Semibold.ttf": "/static/media/Acumin-Pro-Semibold.99bc5fccf4e6a8ffeb83.ttf",
     "index.html": "/index.html",
-    "main.eccbf48a.css.map": "/static/css/main.eccbf48a.css.map",
-    "main.c3e5c195.js.map": "/static/js/main.c3e5c195.js.map",
-    "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
+    "main.4a95d0b4.css.map": "/static/css/main.4a95d0b4.css.map",
+    "main.6d0bb0ee.js.map": "/static/js/main.6d0bb0ee.js.map",
+    "787.365be13a.chunk.js.map": "/static/js/787.365be13a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eccbf48a.css",
-    "static/js/main.c3e5c195.js"
+    "static/css/main.4a95d0b4.css",
+    "static/js/main.6d0bb0ee.js"
   ]
 }
