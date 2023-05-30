@@ -39,17 +39,17 @@
     ]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+                "production": [
+                        "> 5%",
+                        "not dead",
+                        "not op_mini all"
+                ],
+                "development": [
+                        "> 5%",
+                        "not dead",
+                        "not op_mini all"
+                ]
+        },
   "devDependencies": {
     "@iconify/react": "^4.0.1",
     "react-router-dom": "^6.6.1"
