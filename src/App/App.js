@@ -66,7 +66,7 @@ export default function App() {
 				</Header2>
 				<Paragraph offset={150} offsetY={scrollPosition.scrollY}>
 					<Fade delay={1000}>
-						I'm a third year undergraduate Computer Science student
+						I'm a fourth year Undergraduate Computer Science student
 					</Fade>
 				</Paragraph>
 				<Paragraph offset={175} offsetY={scrollPosition.scrollY}>

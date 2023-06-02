@@ -27,7 +27,7 @@ ul {
 }
 
 .experience-date {
-    padding-bottom: 1vh;
+    padding-bottom: 1.5vh;
     font-size: 2vh;
     letter-spacing: .1px;
     line-height: 2.5vh;
@@ -42,7 +42,7 @@ ul {
     letter-spacing: .1px;
     line-height: 2.5vh;
     padding-left:  10px;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 
