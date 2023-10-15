@@ -1,14 +1,3 @@
-@font-face {
-  font-family: 'Acumin';
-  /*a name to be used later*/
-  src: url('../components/config/fonts/Acumin-Pro-Semibold.ttf');
-  /*URL to font*/
-}
-
-html {
-}
-
-
 .visible {
   transition-timing-function: ease-in;
   transition: 1s;
@@ -39,7 +28,7 @@ html {
   font-family: Acumin;
   /* color: #F2EDD7FF; */
   color: white;
-  line-height: .7em;
+  line-height: 0.7em;
   animation: ease-out;
 }
 
@@ -89,5 +78,4 @@ body {
 .contact {
   position: relative;
   text-align: center;
-  
 }

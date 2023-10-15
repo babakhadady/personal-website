@@ -1,0 +1,24 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+
+body {
+  background-color: #0f0f0f;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+body,
+#root {
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  opacity: 0.5;
+}

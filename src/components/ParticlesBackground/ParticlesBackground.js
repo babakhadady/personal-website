@@ -1,25 +1,22 @@
+import { Particles } from "react-particles";
 import { loadFull } from "tsparticles";
-import Particles from "react-tsparticles";
-import particlesConfig from "../config/particlesConfig";
+import particlesConfig from "../../config/particlesConfig";
 import React from "react";
-import "./style.css";
-import { useEffect } from "react";
+import "./style.scss";
 
-const ParticlesBackground = (height) => {
-    const particlesInit = async (main) => {
-        await loadFull(main);
-      };      
-	console.log("HHH " + height.height)
+function ParticlesBackground(height) {
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
 
-	useEffect(() => {
-
-	}, [height.height]);
-
-    return (
-        <Particles options={particlesConfig} init={particlesInit} 
-        className={"wrapper"} height={height.height}/>
-
-    )
+  return (
+    <Particles
+      options={particlesConfig}
+      init={particlesInit}
+      className={"particles-wrapper"}
+      height={height}
+    />
+  );
 }
 
-export default React.memo(ParticlesBackground);
+export default ParticlesBackground;
