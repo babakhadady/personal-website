@@ -1,16 +1,16 @@
 import "./App.css";
 import { useEffect, useState, useRef } from "react";
 import { Fade } from "react-reveal";
-import NavBar from "../components/NavBar/NavBar";
-import Header from "../components/Header/Header";
-import Header2 from "../components/Header/Header2";
-import Header3 from "../components/Header/Header3";
-import Projects from "../components/Projects/Projects"
-import Paragraph from "../components/Paragraph/Paragraph";
-import Skills from "../components/Skills/Skills"
-import Contact from "../components/Contact/Contact";
-import Experiences from "../components/Experiences/Experiences";
-import ParticlesBackground from "../components/ParticlesBackground/ParticlesBackground";
+import NavBar from "./components/NavBar/NavBar";
+import Header from "./components/Header/Header";
+import Header2 from "./components/Header/Header2";
+import Header3 from "./components/Header/Header3";
+import Projects from "./components/Projects/Projects"
+import Paragraph from "./components/Paragraph/Paragraph";
+import Skills from "./components/Skills/Skills"
+import Contact from "./components/Contact/Contact";
+import Experiences from "./components/Experiences/Experiences";
+import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,7 +23,6 @@ export default function App() {
 
 	useEffect(() => {
 		document.body.style.backgroundColor = '#0f0f0f';
-		document.title = "Babak Hadady";
 		AOS.init();
 
 		setHeight(document.documentElement.offsetHeight);
