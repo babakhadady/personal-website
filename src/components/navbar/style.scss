@@ -1,8 +1,10 @@
 .navigation-bar {
-  position: absolute;
-  right: 0;
-
+  position: fixed;
+  right: 1.75vw;
+  top: 6vh;
   .navigation-element {
+    position: absolute;
+    right: 0;
     color: white;
     text-decoration: none;
     font-size: 1.75vh;
@@ -11,7 +13,7 @@
   }
 
   li {
-    display: block;
-    padding: 1.5vw;
+    list-style-type: none;
+    padding: 3.2vh 0;
   }
 }

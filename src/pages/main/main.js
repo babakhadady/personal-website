@@ -1,12 +1,8 @@
 import { useEffect } from "react";
 
 import "./styles.scss";
+import Contact from "../../components/contact/Contact";
 function Main() {
-
-  useEffect(() => {
-
-    console.log(document.body.clientWidth)
-  })
   return (
     <div id="main-page">
       <div className="heading">babak</div>
@@ -25,6 +21,7 @@ function Main() {
           I'm seeking an intern opportunity for September 2023.
         </p>
       </p>
+      <Contact />
     </div>
   );
 }
