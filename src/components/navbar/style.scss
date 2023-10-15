@@ -1,0 +1,17 @@
+.navigation-bar {
+  position: absolute;
+  right: 0;
+
+  .navigation-element {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75vh;
+    font-weight: 200px;
+    letter-spacing: 0.12vw;
+  }
+
+  li {
+    display: block;
+    padding: 1.5vw;
+  }
+}
