@@ -9,18 +9,21 @@ import ParticlesBackground from "./components/particles/particles";
 import NavigationBar from "./components/navbar/navbar";
 import Projects from "./pages/projects/projects";
 
+export const INITIAL_DURATION = 1000;
+
 function App() {
   return (
     <BrowserRouter>
-      <NavigationBar />
-      <ParticlesBackground height={document.documentElement.offsetHeight} />
-      <Routes>
-        <Route path={routes.main} element={<Main />} />
-        <Route path={routes.about} element={<About />} />
-        <Route path={routes.projects} element={<Projects />} />
+      <ParticlesBackground>
+        <NavigationBar />
+        <Routes>
+          <Route path={routes.main} element={<Main />} />
+          <Route path={routes.about} element={<About />} />
+          <Route path={routes.projects} element={<Projects />} />
 
-        <Route path={routes.error} element={<ErrorPage />} />
-      </Routes>
+          <Route path={routes.error} element={<ErrorPage />} />
+        </Routes>
+      </ParticlesBackground>
     </BrowserRouter>
   );
 }

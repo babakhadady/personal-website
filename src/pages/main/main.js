@@ -1,26 +1,38 @@
-import { useEffect } from "react";
-
 import "./styles.scss";
 import Contact from "../../components/contact/Contact";
+import { Fade } from "react-reveal";
+
+import { INITIAL_DURATION } from "../../App";
+
 function Main() {
   return (
     <div id="main-page">
-      <div className="heading">babak</div>
-      <p className="subheading">
-        software engineer, computer science student, teaching assistant
-      </p>
+      <Fade top distance={"500px"} delay={100} duration={INITIAL_DURATION}>
+        <div className="heading">babak</div>
+      </Fade>
+      <Fade delay={INITIAL_DURATION}>
+        <p className="subheading">
+          software engineer, computer science student, teaching assistant
+        </p>
+      </Fade>
 
-      <p className="about-container">
-        <p className="about">
-          I'm a fourth year Undergraduate Computer Science student
-        </p>
-        <p className="about">
-          and Teaching Assistant at the University of British Columbia.
-        </p>
-        <p className="about">
-          I'm seeking an intern opportunity for September 2023.
-        </p>
-      </p>
+      <div className="about-container">
+        <Fade delay={INITIAL_DURATION + 200}>
+          <p className="about">
+            i'm a fourth year undergraduate computer science student
+          </p>
+        </Fade>
+        <Fade delay={INITIAL_DURATION + 400}>
+          <p className="about">
+            and teaching assistant at the university of british columbia.
+          </p>
+        </Fade>{" "}
+        <Fade delay={INITIAL_DURATION + 600}>
+          <p className="about">
+            i'm seeking an intern opportunity for january 2024.
+          </p>
+        </Fade>
+      </div>
       <Contact />
     </div>
   );

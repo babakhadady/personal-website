@@ -1,0 +1,66 @@
+[
+  {
+    "icon": "vscode-icons:file-type-cpp3",
+    "name": "C++"
+  },
+  {
+    "icon": "logos:c",
+    "name": "C"
+  },
+  {
+    "icon": "logos:java",
+    "name": "Java"
+  },
+  {
+    "icon": "vscode-icons:file-type-css",
+    "name": "CSS"
+  },
+  {
+    "icon": "logos:javascript",
+    "name": "JavaScript"
+  },
+  {
+    "icon": "logos:react",
+    "name": "React"
+  },
+  {
+    "icon": "file-icons:latex",
+    "name": "TeX"
+  },
+  {
+    "icon": "vscode-icons:file-type-html",
+    "name": "HTML"
+  },
+  {
+    "icon": "logos:typescript-icon",
+    "name": "TypeScript"
+  },
+  {
+    "icon": "simple-icons:express",
+    "name": "Express"
+  },
+  {
+    "icon": "vscode-icons:file-type-node",
+    "name": "Node.js"
+  },
+  {
+    "icon": "logos:bootstrap",
+    "name": "Bootstrap"
+  },
+  {
+    "icon": "logos:python",
+    "name": "Python"
+  },
+  {
+    "icon": "devicon:jenkins",
+    "name": "Jenkins"
+  },
+  {
+    "icon": "logos:docker-icon",
+    "name": "Docker"
+  },
+  {
+    "icon": "devicon:jira",
+    "name": "Jira"
+  }
+]

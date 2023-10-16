@@ -21,14 +21,14 @@ const particlesConfig = {
     enable: false
   },
   fullScreen: {
-    enable: false,
+    enable: true,
     zIndex: -1
   },
   detectRetina: true,
   duration: 0,
   fpsLimit: 120,
   interactivity: {
-    detectsOn: "window",
+    detect_on: "window",
     events: {
       onClick: {
         enable: false,

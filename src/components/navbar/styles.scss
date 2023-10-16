@@ -2,6 +2,8 @@
   position: fixed;
   right: 1.75vw;
   top: 6vh;
+  z-index: 1;
+
   .navigation-element {
     position: absolute;
     right: 0;
@@ -15,5 +17,12 @@
   li {
     list-style-type: none;
     padding: 3.2vh 0;
+  }
+
+  .current {
+    opacity: 0.25;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
   }
 }

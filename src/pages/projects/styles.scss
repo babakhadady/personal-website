@@ -1,0 +1,13 @@
+.projects-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    margin: 10vh 7vw 10vh;
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 0.1vw;
+  }
+}

@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./styles.scss";
 import { Icon } from "@iconify/react";
 
 function Contact() {

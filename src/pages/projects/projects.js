@@ -1,11 +1,17 @@
-import projects from "../../documents/projects.json";
+import projects from "../../data/projects.json";
 import Project from "../../components/project/project";
+import "./styles.scss";
+import { Fade } from "react-reveal";
+import { INITIAL_DURATION } from "../../App";
 
 function Projects() {
   return (
     <div className="projects-container">
-      {projects.map((project) => (
-        <Project project={project} />
+      <Fade duration={INITIAL_DURATION}>
+        <h1> projects</h1>
+      </Fade>
+      {projects.map((project, idx) => (
+        <Project project={project} key={idx} />
       ))}
     </div>
   );
