@@ -1,5 +1,7 @@
+import Experience from "../../components/experience/experience";
 import Skill from "../../components/skill/skill";
-import skills from "../../data/skills.json";
+import experiences from "../../data/json/experiences.json";
+import skills from "../../data/json/skills.json";
 import "./styles.scss";
 
 function About() {
@@ -8,15 +10,20 @@ function About() {
       <h1>about</h1>
       <h2>experiences</h2>
 
+<div className="experiences-container">
+
+      {experiences.map((experience, idx) => {
+        return <Experience experience={experience} key={idx} />;
+      })}
+</div>
       <h2>skills</h2>
       <div>
         <ul className="skills-container">
           {skills.map((skill, idx) => {
-            return <Skill skill={skill} key={idx}></Skill>;
+            return <Skill skill={skill} key={idx} />;
           })}
         </ul>
       </div>
-      <p className="text">test</p>
     </div>
   );
 }

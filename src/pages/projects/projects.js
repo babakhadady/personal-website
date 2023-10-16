@@ -1,4 +1,4 @@
-import projects from "../../data/projects.json";
+import projects from "../../data/json/projects.json";
 import Project from "../../components/project/project";
 import "./styles.scss";
 import { Fade } from "react-reveal";
