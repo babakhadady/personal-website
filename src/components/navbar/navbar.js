@@ -7,7 +7,6 @@ import { INITIAL_DURATION } from "../../App";
 
 function NavigationBar() {
   const location = useLocation().pathname;
-  console.log(location);
 
   return (
     <div className="navigation-bar">

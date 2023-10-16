@@ -16,7 +16,7 @@ function Main() {
         </p>
       </Fade>
 
-      <div className="about-container">
+      <div className="main-about-container">
         <Fade delay={INITIAL_DURATION + 200}>
           <p className="about">
             i'm a fourth year undergraduate computer science student

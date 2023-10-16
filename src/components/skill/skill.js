@@ -1,4 +1,3 @@
-import Visible from "../../hooks/Visible";
 import "./styles.scss";
 import { Icon } from "@iconify/react";
 
