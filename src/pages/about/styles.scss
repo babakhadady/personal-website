@@ -1,0 +1,36 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin: 10vh 0 0vh;
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 0.1vw;
+  }
+
+  h2 {
+    margin: 3vh 0;
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 0.1vw;
+  }
+
+  .skills-container {
+    padding-left: 0;
+    width: 60%;
+    list-style: none;
+    position: relative;
+    display: flex;
+    columns: 4;
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+
+  .experiences-container {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

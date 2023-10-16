@@ -1,32 +1,37 @@
-import Visible from "../../hooks/Visible";
-import { useRef } from "react";
-import "./style.css";
-import { Icon } from '@iconify/react';
+import "./styles.scss";
+import { Icon } from "@iconify/react";
 
-
-const Contact = ({ children, offset, offsetY }) => {
-    const ref = useRef();
-    const shouldShow = Visible(offset);
-
-    return (
-     <div className="contact-padding">
-          
-            <ul className="contact-list">
-                <li className="contact-body">
-                    <Icon className="contact-icon" icon="mdi:linkedin" />
-                    <a target="_blank" className="contact-text" href="https://www.linkedin.com/in/babak-hadady-50a857201/" >linkedin/babakhadady</a>
-                </li>
-                <li className="contact-body">
-                    <Icon className="contact-icon" icon="mdi:github" />
-                    <a target="_blank" className="contact-text" href="https://github.com/babakhadady" >github/babakhadady</a>
-                </li>
-                <li className="contact-body">
-                    <Icon className="contact-icon" icon="material-symbols:mail" />
-                    <a className="contact-text" href="mailto:hadadybabak@gmail.com">/babakhadady</a>
-                </li>
-            </ul>
-     </div>
-    )
+function Contact() {
+  return (
+    <ul className="contact-list">
+      <li className="contact-element">
+        <Icon className="contact-icon" icon="mdi:linkedin" />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className="contact-text"
+          href="https://www.linkedin.com/in/babak-hadady-50a857201/">
+          linkedin/babakhadady
+        </a>
+      </li>
+      <li className="contact-element">
+        <Icon className="contact-icon" icon="mdi:github" />
+        <a
+          target="_blank"
+          className="contact-text"
+          rel="noreferrer"
+          href="https://github.com/babakhadady">
+          github/babakhadady
+        </a>
+      </li>
+      <li className="contact-element">
+        <Icon className="contact-icon" icon="material-symbols:mail" />
+        <a className="contact-text" href="mailto:hadadybabak@gmail.com">
+          /babakhadady
+        </a>
+      </li>
+    </ul>
+  );
 }
 
-export default Contact
+export default Contact;
