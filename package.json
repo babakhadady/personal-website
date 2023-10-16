@@ -5,6 +5,7 @@
   "homepage": "https://babakhadady.github.io",
   "dependencies": {
     "@iconify/react": "^4.1.1",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
     "react": "^18.2.0",
     "react-particles": "^2.12.2",
