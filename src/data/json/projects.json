@@ -1,13 +1,13 @@
 [
   {
-    "name": "AES-Image",
-    "sub": "AES Image Encryption",
+    "name": "aes-image",
+    "sub": "aes image encryption",
     "description": [
-      "Implemented Advanced Encryption Standard (AES) 128 bit with cipher block chaining for encryption and decryption of selected .png images.",
-      "Utilized the Arnold chaos system for round key generation, decreasing the runtime of the original algorithm implementation by 83%.",
-      "Developed a comprehensive unit test suite utilizing Catch2 and Git Workflows for continuous integration."
+      "implemented advanced encryption standard (aes) 128 bit with cipher block chaining for encryption and decryption of selected .png images.",
+      "utilized the arnold chaos system for round key generation, decreasing the runtime of the original algorithm implementation by 83%.",
+      "developed a comprehensive unit test suite utilizing catch2 and git workflows for continuous integration."
     ],
-    "tech": ["vscode-icons:file-type-cpp3", ""]
+    "tech": ["c++", "catch2"]
   },
   {
     "name": "outdoorly",
