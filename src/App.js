@@ -1,4 +1,10 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  HashRouter,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import { routes } from "./router/routes";
 import Main from "./pages/main/main";
 import About from "./pages/about/about";
@@ -14,7 +20,7 @@ export const INITIAL_DURATION = 1000;
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ParticlesBackground>
         <ScrollTop>
           <NavigationBar />
@@ -27,7 +33,7 @@ function App() {
           </Routes>
         </ScrollTop>
       </ParticlesBackground>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
