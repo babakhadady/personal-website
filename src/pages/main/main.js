@@ -29,7 +29,7 @@ function Main() {
         </Fade>{" "}
         <Fade delay={INITIAL_DURATION + 600}>
           <p className="about">
-            i'm seeking an intern opportunity for january 2024.
+            i'm seeking an intern opportunity for summer 2024.
           </p>
         </Fade>
       </div>

@@ -7,7 +7,11 @@
       "Utilized the Arnold chaos system for round key generation, decreasing the runtime of the original algorithm implementation by 83%.",
       "Developed a comprehensive unit test suite utilizing Catch2 and Git Workflows for continuous integration."
     ],
+<<<<<<< Updated upstream
     "tech": ["vscode-icons:file-type-cpp3", ""]
+=======
+    "tech": ["vscode-icons:file-type-cpp3", "catch2"]
+>>>>>>> Stashed changes
   },
   {
     "name": "outdoorly",
