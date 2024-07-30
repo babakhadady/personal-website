@@ -1,5 +1,5 @@
 import "./styles.scss";
-import Contact from "../../components/contact/contact";
+import Contact from "../../components/Contact/contact";
 import { Fade } from "react-reveal";
 
 import { INITIAL_DURATION } from "../../App";
