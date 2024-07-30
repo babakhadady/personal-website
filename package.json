@@ -1,45 +1,25 @@
 {
-  "name": "app",
-  "version": "0.1.0",
+  "name": "babak-hadady",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://babakhadady.github.io",
-  "dependencies": {
-    "@iconify/react": "^4.1.1",
-    "gh-pages": "^6.0.0",
-    "html-webpack-plugin": "^5.5.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-particles": "^2.12.2",
-    "react-reveal": "^1.2.2",
-    "react-router-dom": "^6.16.0",
-    "react-scripts": "^5.0.1",
-    "sass": "^1.69.3",
-    "tsparticles": "^2.12.0"
-  },
+  "description": "babak-hadady",
+  "author": "Babak",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      "> 5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "> 5%",
-      "not dead",
-      "not op_mini all"
-    ]
+  "dependencies": {
+    "@vanilla-extract/css": "^1.15.3",
+    "@vanilla-extract/webpack-plugin": "^2.3.11",
+    "gatsby": "^5.13.5",
+    "gatsby-plugin-vanilla-extract": "^4.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
